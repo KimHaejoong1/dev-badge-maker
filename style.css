@@ -1,0 +1,222 @@
+/* 기본 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+body {
+  background-color: #ffcccc; /* 연한 분홍색 배경 */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+header p {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+main {
+  background-color: #fafafa; /* 밝은 회색 배경 */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ffaaaa;
+}
+
+input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.preview-section {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.preview-section h2 {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.3rem;
+}
+
+.badge-preview {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.badge-preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge-preview img {
+  max-width: 100%;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 8px;
+}
+
+.info-text a {
+  color: #ff9999;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.info-text a:hover {
+  color: #ff6666;
+  text-decoration: underline;
+}
+
+.click-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.markdown-section h3 {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.markdown-code {
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 15px;
+  position: relative;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: #555;
+  font-family: monospace;
+}
+
+button {
+  background-color: #ffaaaa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #ff9999;
+}
+
+/* 복사 알림 */
+.copy-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background-color: #ffaaaa;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.copy-notification.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}

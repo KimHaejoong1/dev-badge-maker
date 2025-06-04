@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBadgeMaker - 개발자 기술 스택 뱃지 생성기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DevBadgeMaker</h1>
+        <p>개발자를 위한 기술 스택 뱃지 생성기</p>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <div class="form-group">
+            <label for="tech-name">기술 스택 이름</label>
+            <input type="text" id="tech-name" placeholder="예: JavaScript, Python, React..." value="JavaScript" />
+          </div>
+
+          <div class="form-group">
+            <label for="badge-color">뱃지 색상 (HEX)</label>
+            <input type="text" id="badge-color" placeholder="#색상코드" value="#F7DF1E" />
+            <input type="color" id="color-picker" value="#F7DF1E" />
+          </div>
+
+          <p class="info-text">스택 이름 및 색상 참고: <a href="https://simpleicons.org/" target="_blank">simpleicons.org</a></p>
+        </div>
+
+        <div class="preview-section">
+          <h2>뱃지 미리보기</h2>
+          <div class="badge-preview" id="badge-preview">
+            <!-- 뱃지 미리보기가 여기에 표시됩니다 -->
+          </div>
+          <p class="click-info">뱃지 이미지를 클릭하면 마크다운 코드가 복사됩니다</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>© 2025 DevBadgeMaker</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
