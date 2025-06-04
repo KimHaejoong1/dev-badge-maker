@@ -2,7 +2,7 @@
 
 # <div align="center"> DevBadgeMaker </div>
 
-> 개발자를 위한 기술 스택 뱃지 생성기입니다. >
+> 개발자를 위한 기술 스택 뱃지 생성기입니다.
 >
 > 이름과 색상을 입력하면 마크다운에서 사용할 수 있는 뱃지를 생성합니다.
 >
@@ -29,7 +29,7 @@ dev-badge-maker/
 ├── README.md
 ├── images/
 │   ├── icon.png
-├── script.json
+├── script.js
 ├── index.html
 ├── style.css
 ```
