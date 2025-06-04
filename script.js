@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const badgeColorInput = document.getElementById("badge-color");
   const colorPicker = document.getElementById("color-picker");
   const badgePreview = document.getElementById("badge-preview");
+  const notionPreview = document.getElementById("notion-preview");
 
   // 전역 변수로 현재 마크다운 코드 저장
   let currentMarkdownCode = "";
+  let currentNotionCode = "";
 
   // 초기 뱃지 생성
   updateBadge();
@@ -31,6 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // 뱃지 클릭 시 마크다운 복사
   badgePreview.addEventListener("click", function () {
     copyToClipboard(currentMarkdownCode);
+  });
+
+  // 노션 클릭 시 노션 복사
+  notionPreview.addEventListener("click", function () {
+    copyToClipboard(currentNotionCode);
   });
 
   // 복사 기능 함수
@@ -86,9 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 마크다운 코드 생성 및 저장
     currentMarkdownCode = `![${techName}](${badgeUrl})`;
+    currentNotionCode = badgeUrl;
 
     // 뱃지 미리보기 업데이트
     badgePreview.innerHTML = `<img src="${badgeUrl}" alt="${techName} 뱃지" title="클릭하여 마크다운 복사">`;
+    notionPreview.innerHTML = `<img src="${badgeUrl}" alt="${techName} 뱃지" title="클릭하여 마크다운 복사">`;
   }
 
   // 색상 밝기 계산 함수
