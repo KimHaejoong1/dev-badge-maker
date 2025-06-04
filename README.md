@@ -8,6 +8,10 @@
 >
 > 개발 기간ㅣ 25-05-31 ~ 06-04
 
+## 🚀 링크
+
+[DevBadgeMaker 바로가기](https://kimhaejoong1.github.io/dev-badge-maker/)
+
 ## ✍️ 사용 방법
 
 1. 기술 스택 이름을 입력합니다 (예: JavaScript, React, Python 등)
@@ -16,7 +20,7 @@
 4. 뱃지 이미지를 클릭하여 마크다운 코드를 복사합니다
 5. 복사한 마크다운 코드를 README 파일 등에 붙여넣어 사용합니다
 
-## 기술 스택
+## 🛠 기술 스택
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=ffffff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff)
