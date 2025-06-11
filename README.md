@@ -10,7 +10,7 @@
 
 ## 🚀 링크
 
-[DevBadgeMaker 바로가기](https://kimhaejoong1.github.io/dev-badge-maker/)
+[![Visit Dev Badge Maker](https://img.shields.io/badge/Visit-Dev%20Badge%20Maker-ffcccc?style=for-the-badge&logo=github&logoColor=white)](https://kimhaejoong1.github.io/dev-badge-maker/)
 
 ## ✍️ 사용 방법
 
